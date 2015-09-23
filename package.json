@@ -1,0 +1,15 @@
+{
+    "name": "cipherboy.brackets-chrome",
+    "title": "Chrome theme for Brackets",
+    "description": "Light gray theme is easy on the eyes, minimal in coloring.",
+    "homepage": "https://github.com/cipherboy/brackets-chrome",
+    "version": "1.0.0",
+    "author": "Alexander Scheel <alexander.m.scheel@gmail.com> (http://cipherboy.github.io)",
+    "license": "MIT",
+    "theme": {
+        "file": "theme.less",
+        "dark": true,
+        "addModeClass": true
+    },
+    "keywords": ["theme", "gray", "grey", "chrome"]
+}

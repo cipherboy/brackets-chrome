@@ -1,0 +1,88 @@
+/**
+*** Theme created by Alexander Scheel
+*** Copyright(C) 2015
+*** Licensed under MIT Public License
+***
+*** Based off of colors in
+*** https://github.com/cipherboy/gedit-styles/blob/master/chrome.xml
+**/
+
+@onlylights:   #eeeeec;
+@background:   #dddddb;
+@brightlights: #bbbbbd;
+@lightlights:  #999997;
+@highlights:   #777775;
+@lowlights:    #333331;
+@foreground:   #111109;
+@lightblue:    #558bef;
+@mediumblue:   #2356ab;
+@darkblue:     #013478;
+@realred:      #cc2211;
+@mediumgreen:  #418005;
+@darkgreen:    #2d5209;
+
+.CodeMirror, .CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background-color: @brightlights;
+    color: @background;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 @brightlights;
+}
+
+.CodeMirror-gutters, .CodeMirror-gutter-elt {
+    background: @onlylights;
+    color: @mediumblue;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: @background;
+        color: @lightblue;
+    }
+
+    .inline-widget .CodeMirror-gutter-elt {
+        color: @lightblue;
+    }
+}
+
+.cm-keyword { color: @darkblue; font-weight: 600; }
+.cm-string, .cm-string-2, .cm-atom, .cm-header, .cm-number { color: @mediumblue; }
+.cm-comment {color: @foreground; font-style: italic; }
+.cm-variable, .cm-variable-2, .cm-variable-3 { color : @mediumgreen; }
+.cm-operator, .cm-meta, .cm-bracket {color: @foreground; }
+.cm-error, .cm-minus {color: @realred; }
+.cm-header {color: @darkgreen; }
+.cm-link {color: #ff0000 ; text-decoration: none; }
+.cm-rangeinfo {color: #6c71c4; }
+.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: @darkblue; }
+.cm-property { color: @lightblue; }
+
+.CodeMirror-searching {
+    background-color: @mediumblue;
+    color: @background !important;
+    &.searching-current-match {
+        background-color: @darkblue;
+        color: @background !important;
+    }
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: @brightlights;
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid @foreground !important;
+}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {
+    /* Ensure visibility against gray inline editor background */
+    background-color: @brightlights;
+    color: @darkblue !important;
+    font-weight: bold;
+}
