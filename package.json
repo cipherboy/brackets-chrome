@@ -3,7 +3,7 @@
     "title": "Chrome Theme",
     "description": "A light gray theme which uses minimal coloring and is easy on the eyes.",
     "homepage": "https://github.com/cipherboy/brackets-chrome",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Alexander Scheel <alexander.m.scheel@gmail.com> (http://cipherboy.github.io)",
     "license": "MIT",
     "theme": {
