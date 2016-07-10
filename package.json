@@ -8,7 +8,7 @@
     "license": "MIT",
     "theme": {
         "file": "theme.less",
-        "dark": true,
+        "dark": false,
         "addModeClass": true
     },
     "keywords": ["theme", "gray", "grey", "chrome"]
